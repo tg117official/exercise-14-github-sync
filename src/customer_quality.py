@@ -18,7 +18,7 @@ customers = spark.createDataFrame(
 
 basic_rule = (
     F.col("customer_id").isNotNull()
-    & F.col("status").isin("Active", "Inactive")
+    & F.col("status").isin("Active", "Inactive", "Pending")
 )
 
 valid_rows = customers.filter(basic_rule)
