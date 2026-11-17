@@ -8,6 +8,7 @@ records = [
     ("C104", "Meera", "Pending", 500),
     (None, "Tarun", "Active", 900),
     ("C106", "Zoya", "Active", -100),
+    ("C107", "Arjun", "Active", 650),
 ]
 
 customers = spark.createDataFrame(
